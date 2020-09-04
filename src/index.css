@@ -7,7 +7,223 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.container{
+  height: 500px;
+  width: 300px;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 50px;
+  border: 1px solid lightgray;
+  box-shadow: 0px 0px 30px -5px black inset;
+}
+
+.display{
+  width: 80%;
+  height: 45%;
+  margin: auto;
+  margin-top: 35px;
+  /* border: 5px solid black; */
+}
+
+.wheel{
+  position: relative;
+  width: 175px;
+  height: 175px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+
+
+.outercircle{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.innercircle{
+  position: relative;
+  top: -117px;
+  left: 121px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#menu{
+  position: absolute;
+  font-weight: bolder;
+  font-size: 20px;
+  top: 20px;
+  left: 60px;
+  cursor: pointer;
+}
+
+#backward{
+  position: absolute;
+  top: 80px;
+  left: 20px;
+  font-weight: bolder;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#forward{
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  font-weight: bolder;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#playpause{
+  position: absolute;
+  bottom: 20px;
+  font-size: 16px;
+  font-weight: bolder;
+  left: 75px;
+  cursor: pointer;
+}
+
+.active{
+  background-color: blue;
+  color: white;
+}
+
+.navbar{
+  display: flex;
+  height: 25px;
+  border-bottom : 1px solid black;
+  position: relative;
+  justify-content: space-between;
+}
+
+.left{
+  /* position: absolute; */
+  margin-left: 5px;
+  font-weight: bolder;
+  /* left: 0px;
+  bottom: 0px; */
+}
+
+.right{
+  /* position: absolute; */
+  margin-right: 5px;
+  /* right: 0px;
+  bottom: 0px; */
+}
+
+ul{
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.lockscreen{
+  display: flex;
+  height: 160px;
+  width: 240px;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+}
+
+.locktext{
+  text-align: center;
+  font-weight: bolder;
+  padding-top: 10px;
+}
+
+.lock{
+  font-size: 50px;
+  align-self: center;
+}
+
+.title{
+  padding-top: 5px;
+  padding-left: 5px;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+ul{
+  padding : 0px 5px;
+  /* width: 60%; */
+  margin-top: 0px ;
+}
+
+.imagecontainer{
+  width: 40%;
+  height: 170px;
+}
+
+li{
+  height: 30px;
+  padding-top: 5px;
+  padding-left: 5px;
+  box-sizing: border-box;
+}
+
+.menuList{
+  width: 60%;
+}
+
+.listImg{
+  display: flex;
+}
+
+.musicplayer .imagename{
+  display: flex;
+  margin-top: 15px;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+
+
+.musicplayer .songImage{
+  height: 100px;
+  width: 40%;
+}
+
+.musicplayer .nameplapau{
+  display: flex;
+  height: 100px;
+  width: 60%;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 5px;
+}
+
+.musicplayer .songname{
+  font-size: 15px;
+  align-self: center;
+  font-weight: bolder;
+}
+
+.musicplayer .playpause{
+  align-self: center;
+  font-weight: bolder;
+  color: blue;
+}
+
+.musicplayer .timer{
+  display: flex;
+  padding: 0px 10px;
+  margin: 10px;
+  justify-content: space-between;
+}
+
+#timerContainer{
+  height: 7px;
+  width: 135px;
+  margin-top: 8px;
+  background-color: gray;
+}
+
+#timer{
+  background-color: green;
+  height: 7px;
 }
