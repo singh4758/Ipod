@@ -24,6 +24,9 @@ import moonWallpaper from "../static/moon.jpg"
 class Container extends React.Component{
     constructor(){
         super();
+
+        // state to store the navivation detail and all important detail 
+
         this.state = {
             active : 0,
             currentMenu : '-2',
@@ -47,6 +50,7 @@ class Container extends React.Component{
         }
     }
 
+    // this function help us to move backward in menu
 
     backMenu = ()=>{
 
@@ -64,6 +68,8 @@ class Container extends React.Component{
 
         return;
     }
+
+    // this function help us to forward move
 
     forwardMenu = () =>{
         if( this.state.currentMenu ==='-2'  || this.state.currentMenu === '-1' ||  this.state.currentMenu=== 1 || this.state.currentMenu=== 7){
@@ -164,7 +170,8 @@ class Container extends React.Component{
 
     }
 
-    
+    // this function help to skip the song and move into next song
+
     seekForward = (e)=>{
         if(this.state.currentMenu==='-2'){
             return;
@@ -220,6 +227,8 @@ class Container extends React.Component{
         this.state.audio.play();
     }
 
+    //this function help to skip song in backward or move into previous song
+
     seekBackward = (e)=>{
         if(this.state.currentMenu==='-2'){
             return;
@@ -274,6 +283,9 @@ class Container extends React.Component{
         this.state.audio.play();
     }
 
+    //this function help to move in repeating song
+
+    
     autoNext=()=>{
         this.state.audio.pause();
         if (this.state.songIndex>=(this.state.songItemsUrl).length-1) {
@@ -294,6 +306,8 @@ class Container extends React.Component{
         this.state.audio.play();
     }
 
+    // this help us to play or pause the song
+
     onOff = () =>{
         if(this.state.currentMenu==='-2'){
             return;
@@ -313,6 +327,7 @@ class Container extends React.Component{
         }
     }
 
+    // this function help to move and select in menu
 
     updateActive = (value)=>{
         let min = 0;
